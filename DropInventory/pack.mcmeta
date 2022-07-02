@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 10,
+		"pack_format": 7,
 		"description": "A death system similar to but more forgiving than vanilla"
 	}
 }
