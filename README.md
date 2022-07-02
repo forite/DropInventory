@@ -8,6 +8,8 @@
 
 **Auto-Sort:** sorts the items picked up by an owner into the offhand, armor, and hotbar slots they were previously in before the owner died.
 
+**Dev Commands:** `/function dinv:dev/` has several QOL functions to be directly called for special cases.
+
 # Requirements: 
 DropInventory requires the gamerule `keepInventory` to be true, and the gamerule `doImmediateRespawn` to be false; the pack automatically enforces this. This datapack also forceloads the chunk `(0, 0)` and uses the position `(0, 1, 0)` for a yellow shulker box. It is advised to not allow players access to this position. If needed, this can be changed with some effort.
 
