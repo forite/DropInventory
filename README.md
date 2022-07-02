@@ -1,4 +1,5 @@
 # DropInventory
+1.17 (change versions by changing branches)
 
 # What it does: 
 **Protected Items:** until the owner dies again, items dropped on death are protected and immune to all damage except the void. 
