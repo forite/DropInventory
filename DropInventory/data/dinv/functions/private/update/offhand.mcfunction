@@ -3,6 +3,9 @@
 
 # Obtains all items with this tag
 data modify storage dinv:storage Query set value []
+data modify storage dinv:temp tag set from storage dinv:storage Query[0].tag
+execute store result score fix.empty_tag dinv run data modify storage dinv:temp tag set value {}
+execute if score fix.empty_tag dinv matches 0 run data remove storage dinv:storage Query[0].tag
 data modify storage dinv:storage Query append from storage dinv:storage WorkingInventory[{tag:{dinv:{Slot:-106b}}}]
 
 # Cleans up and puts first item instance
