@@ -1,4 +1,5 @@
-# DropInventory 
+# DropInventory
+**Untested Branch!** I wrote this on a machine without access to Minecraft, so I am unable to test it yet. Also, the commit diff is atrocious, so I might retry the commit...
 1.19 (change versions by changing branches)
 
 # What it does: 
