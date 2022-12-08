@@ -1,15 +1,10 @@
 # Gives the next item in Query to the context player
+# Called after the "first" item in a query is updated into
+# an inventory slot; the rest are simply given back to the player
 # It loops until there are no items left
 # Do not call this function
 
-data remove storage dinv:storage Query[0].tag.dinv
-data modify storage dinv:temp tag set from storage dinv:storage Query[0].tag
-execute store result score fix.empty_tag dinv run data modify storage dinv:temp tag set value {}
-execute if score fix.empty_tag dinv matches 0 run data remove storage dinv:storage Query[0].tag
-data modify storage dinv:storage Query[0] merge value {Slot:0b}
-
-data remove block 0 1 0 Items
-data modify block 0 1 0 Items append from storage dinv:storage Query[0]
+function dinv:private/update/sbt_setup
 loot give @s mine 0 1 0 minecraft:air{drop_contents:1b}
 
 data remove storage dinv:storage Query[0]

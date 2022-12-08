@@ -1,4 +1,5 @@
-# Make the item unprotected
+# Make this item unprotected
+# do not call this function
 
 tag @s remove dinv.item.fresh
 tag @s add dinv.item.unsafe
